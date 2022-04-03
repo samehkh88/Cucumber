@@ -8,4 +8,4 @@ Then the system redirect to the home page and log out appear
 
 Examples:
 | UserName | Password | 
-| sameh@netservex.com | Test@123 | 
+| 2same2h1221@netservex.com | Test@123 | 

@@ -3,21 +3,24 @@ package stepDefinations;
 
 import org.testng.Assert;
 
-import CucumberOptions.TestRunner1;
+
+import CucumberOptions.TestRunnerTest;
 import Pages.HomePage;
 import Pages.UserloginPage;
+import factory.DriverFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 
-public class Loginlearn extends TestRunner1{
+public class Loginlearn extends TestRunnerTest{
 
 	HomePage Home;
 	UserloginPage loginpage;
 	
 	@Given("the User in home page")
 	public void the_user_in_home_page() {
+		driver = DriverFactory.getDriver();
 		Home = new HomePage(driver);
 		Home.OpenLoginPage();
 	}

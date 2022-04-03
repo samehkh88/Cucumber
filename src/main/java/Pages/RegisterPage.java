@@ -57,13 +57,13 @@ public class RegisterPage extends PageBase {
 		ClickButtons(RegisterButton);
 	}
 
-	public void UserRegister2(String fname , String Lname , String month , String email , String pass , String Confirmpass  )
+	public void UserRegister2(String fname , String Lname , String email , String pass , String Confirmpass  )
 	{
 
 		ClickButtons(Gender);
 		SendValue(FirstName, fname);
 		SendValue(LastName, Lname);
-		SelectFromDrobDown(MonthofBirth, month);
+		//SelectFromDrobDown(MonthofBirth, month);
 
 		SendValue(Email, email);
 		SendValue(Password, pass);
